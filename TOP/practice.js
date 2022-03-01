@@ -1,11 +1,11 @@
 function computerPlay () {
     let choiceRPS = ["rock", "paper", "scissors"];
-    return randomeChoice = choiceRPS[Math.floor(Math.random()*choiceRPS.length)];
+    return choiceRPS[Math.floor(Math.random()*choiceRPS.length)];
 }
 
 function playerPlay () {
     let playerSelection = prompt("You are about to play Paper, scissors, rock against a computer. Please choose an option");
-    return playerSelection = playerSelection.toLowerCase();
+    return playerSelection.toLowerCase();
 }
 let randomChoice = computerPlay();
 let playerSelection = playerPlay();
@@ -56,6 +56,7 @@ function playRound () {
 function game () {
     for (let rounds = 0; rounds < 5; rounds++) {
         console.log("Round " + (rounds + 1));
+        
         console.log("Computer choice: " + computerPlay());
         console.log("Player choice: " + playerPlay());
         console.log(playRound());
@@ -63,4 +64,4 @@ function game () {
     }
 }
 
-console.log(game());
+game();
