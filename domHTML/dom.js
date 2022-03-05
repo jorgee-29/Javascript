@@ -1,1 +1,1 @@
-console.log("Hey, this works.");
+document.createElement(h1);
